@@ -1,0 +1,122 @@
+body{
+    background-image: url("source/body.jpeg");
+}
+p.autor{
+    font-size: 2em;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    color: #505050;
+    margin: 0.5em 0 0.2em;
+    font-variant: normal;
+}
+p.name{
+    font-size: 3.7em;
+    text-align: center;
+    font-style: oblique;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-family: "Bodoni MT Condensed", Georgia, Times, serif;
+}
+p.type{
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0.5em 0 0.2em;
+    font-variant: normal;
+    font-size: 1.5em;
+    color: #505050;
+}
+#act{
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Bodoni MT Condensed", Georgia, Times, serif;
+    text-decoration: underline;
+}
+#scene{
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: "Bodoni MT Condensed", Georgia, Times, serif;
+}
+#description{
+    font-family: "Bodoni MT Condensed", Georgia, Times, serif;
+    font-size: 1.1em;
+}
+.active .tab{
+    color: #0f0f0f;
+}
+div.img-responsive{
+    border-radius: 50px;
+}
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    cursor: no-drop;
+}
+.overlay:target {
+    display: block;
+}
+.popup {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    z-index: 20;
+    max-width: 550px;
+    position: fixed;
+    padding: 15px;
+    background: #f2dede;
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 0.6s ease-out;
+    -moz-transition: -moz-transform 0.6s ease-out;
+    -o-transition: -o-transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+}
+.overlay:target+.popup {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 25%;
+}
+.close {
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    background-color: rgba(61, 61, 61, 0.8);
+    -webkit-box-shadow: 0px 0px 10px #000;
+    -moz-box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 10px #000;
+    text-align: center;
+    -webkit-transition: all ease .8s;
+    -moz-transition: all ease .8s;
+    -ms-transition: all ease .8s;
+    -o-transition: all ease .8s;
+    transition: all ease .8s;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    text-shadow: 0 -2px white;
+    font-size: 15px;
+}
+.close:hover {
+    background-color: red;
+}
+
