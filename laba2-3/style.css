@@ -1,0 +1,98 @@
+body{
+    background-image: url("source/body.jpeg");
+}
+p.autor{
+    font-size: 2em;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    color: #505050;
+    margin: 0.5em 0 0.2em;
+    font-variant: normal;
+}
+p.name{
+    font-size: 3.7em;
+    text-align: center;
+    font-style: oblique;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-family: "Bodoni MT Condensed", Georgia, Times, serif;
+}
+p.type{
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0.5em 0 0.2em;
+    font-variant: normal;
+    font-size: 1.5em;
+    color: #505050;
+}
+#act{
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Bodoni MT Condensed", Georgia, Times, serif;
+    text-decoration: underline;
+}
+#scene{
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: "Bodoni MT Condensed", Georgia, Times, serif;
+}
+#description{
+    font-family: "Bodoni MT Condensed", Georgia, Times, serif;
+    font-size: 1.1em;
+}
+.popup {
+    left: 50%;
+    top: 10%;
+    z-index: 20;
+    max-width: 800px;
+
+    position: fixed;
+
+    padding: 10px;
+
+    background: #EEEEEE;
+    transform: translate(-50%, 0%);
+
+    transition: transform 0.6s ease-out;
+    border-radius: 10px;
+}
+.addComment:hover, .addComment:target, .addComment:active {
+    text-decoration: none;
+    color: #999999;
+}
+#form p{
+    margin: .5em;
+}
+#form label{
+    display: block;
+    margin-bottom: 1px;
+}
+#form input, #form textarea{
+    padding: 5px;
+    border: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: mintcream;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+    color: #3c763d;
+    font-size: 13px;
+}
+#form input{
+    width: 90%;
+}
+#form input:focus, #form textarea:focus{
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+    background: wheat;
+    color: gray;
+}
+#form textarea{
+    overflow: auto;
+    width: 100%;
+    height: 120px;
+}
+.open {
+    display: none;
+}
